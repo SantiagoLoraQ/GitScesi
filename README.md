@@ -32,3 +32,52 @@ circunstancias
 Para evitar tocar archivos sensibles
 * README.md
 Documentacion basica del proyecto
+
+##Clase 2
+###Estados de GIT
+* Directorio de trabajo
+Carpeta local donde git no tiene nada aun asegurado
+- untraquet --> archivo nuevo sin seguimiento por parte de git
+- modified --> archivo ya existente en git con alguna modificacion
+* Stage Area
+Area donde se espera a confirmar guardar
+* Repositorio Local
+Cambios ya guardados en el historial 
+
+###Devolver archivo modificado a su estado original
+git restore <archivo> (Borra fisicamente)
+
+###Llevar archivo a stage area
+git add <archivo>
+git add .
+####Sacar archivo de stage area
+git restore --staged <arvhivo>
+
+###Repositorio local, crear punto de guardado
+git commit -m "mensaje"
+####Deshacer ultimo commit
+git reset --soft HEAD~1
+
+###Historial de commits
+ git log --> muestra todo el historial
+ git log --oneline --> muestra log resumido
+
+###Explicacion y desarrollo del archivo .gitignore
+Busca evitar que git lea archivos que se coloquen acorde a nuestras necesidades, generalmente se usar para evitar mostrar o subir archivos con datos sencibles
+
+###Buenas Practicas
+- Commits atomicos: hacer commits cada que se algo pequeño pero que cambie la funcionalidad
+-  Por ejemplo:
+-   Incorrecto:
+git commit -m "Metodos multiplicacion y suma"
+-   Correcto:
+git commit -m "Metodo multiplicacion"
+git commit -m "Metodo suma"
+
+
+###Reglas al describir un commit:
+1. Usar verbos imperactivos
+2. No uses punto final ni puntos suspensivos en tus mensajes
+3. Usa como maximo 50 caracteres
+4. Usa un prefijo para los commits
+5. Añade todo el contexto que sea necesario en el commit
