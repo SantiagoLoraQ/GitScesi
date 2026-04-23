@@ -81,3 +81,19 @@ git commit -m "Metodo suma"
 3. Usa como maximo 50 caracteres
 4. Usa un prefijo para los commits
 5. Añade todo el contexto que sea necesario en el commit
+
+
+##Clase 3
+###Creacion de llaves
+###Creacion de cuenta en GitHub
+###Conexion maquina local con GitHub
+###Clonado de repositorio con ssh
+###Beneficios de usar ssh
+###Beneficion de GitHub Universitario
+Copilot gratis
+Creditos
+Dominios gratis
+Varias herramientas de distintas plataformas
+###Maximo a subir en un commit
+100MB
+
