@@ -84,16 +84,42 @@ git commit -m "Metodo suma"
 
 
 ##Clase 3
-###Creacion de llaves
 ###Creacion de cuenta en GitHub
+Se mostro el como se registra un nuevo usuario en GitHub con un nombre de usuario, correo, contraseña y complertado de un captcha
+luego de iniciar sesion se realizo la creacion de un nuevo repositorio publico
+
 ###Conexion maquina local con GitHub
-###Clonado de repositorio con ssh
+Despues de tener configurado el correo y nombre de usuario en git y haber realizado diferentes commits se debe crear un enlace con GitHub con el siguiente comando:
+git remote add origin git@github.com:usuario/nombre-del-repositorio.git
+Para subir los archivos se ejecuta:
+git push -u origin main (o la rama que se quiera usar
+
+####Creacion de llaves para SSH
+En windows se hace desde git bash
+En linux se hace desde la consola con el comando:
+- ssh-keygen -t ed25519 -C "correo@gmail.com" 
+ese comando genera un codigo en una ubicacion en la cual se puede acceder en la ubicacio indicada al generar el codigo
+
+Se debe copiar el codigo y en los ajustes de GitHub debemos ir a la seccion ssh and gpg keys donde se le pone un nombre al codigo y se pega la key para luego agregar la key
+Se pruba que todo haya funcionado bien con el comando:
+- ssh -T git@github.com
+
 ###Beneficios de usar ssh
+No pide credenciales a cada rato
+Mejora el flujo de trabajo 
+Sirve para un mejor acceso remoto y administracion de sistemas
+
 ###Beneficion de GitHub Universitario
 Copilot gratis
 Creditos
 Dominios gratis
 Varias herramientas de distintas plataformas
+
 ###Maximo a subir en un commit
-100MB
+- Limite por archivo individual:
+100MB como tope y a los 50MG se da una advertencia
+- Limite por commit:
+Por recomendacion de 2GB
+- Limite del repositorio
+Se recomienda mantenerlo por debajo de 1GB - 5GB
 
