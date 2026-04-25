@@ -123,3 +123,25 @@ Por recomendacion de 2GB
 - Limite del repositorio
 Se recomienda mantenerlo por debajo de 1GB - 5GB
 
+##Clase 4
+###Git remote
+Es un comando para gestionar conexiones con los repositorios y sus direcciones
+- git remote -v
+Permite ver la direccion o url del repositorio
+- git remote add <apodo> "url"
+Agrega o vinclula el repositorio local con el de la nube
+- git remote set-url <apodo> "urlNueva" 
+Cambia la url actual por la nueva
+
+###Tener varias ssh
+Se puede configurar varias claves ssh acorde a las necesidades que se tengan
+se debe generar el ssh con un nuevo nombre para evitar reemplazar el anterior con el ya creado
+ssh-keygen -t miKey -C "correo@gmail.com" -f direccionDeGuardado
+
+se debe crear un archivo llamado config donde se deben configurar las dos keys segun sea necesario
+
+###Checkout
+inspeccionar
+restaurar
+experimentar
+cambiar
