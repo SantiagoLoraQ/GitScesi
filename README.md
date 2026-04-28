@@ -141,8 +141,32 @@ ssh-keygen -t miKey -C "correo@gmail.com" -f direccionDeGuardado
 se debe crear un archivo llamado config donde se deben configurar las dos keys segun sea necesario
 
 ### Checkout
-inspeccionar
-restaurar
-experimentar
-cambiar
+ inspeccionar
+ restaurar
+ experimentar
+ cambiar
+## Clase 4
+### Ramas o branches
+Las ramas son una caracteristica que permite al usuario subdividir su repositorio para tener un control acorde a las necesidades del usuario
+#### git branch
+comando para listar las ramas disponibles
+#### git branch <rama>
+crea una rama desde la rama en la que estamos ubicados
+#### git branch -D <rama>
+Elimina la rama
+
+### git checkout en ramas
+#### git checkout <rama>
+cambiar la rama
+#### git checkout -b <rama>
+crea la rama y te pone en llamado
+### Gitflow
+Es un flujo de trabajo que nos permite tener una coherencia y logica mas organizada al momento de utilizar git y las ramas, si bien no es obligatorio tiende a ser algo justo y necesario para permitir un flujo adecuado de nuestros trabajo
+### Ramas que se utilizan en Gitflow
+main --> rama principal al momento de crear cualquier repostorio, solia usarse como master 
+develop --> donde se prueban y preparan las nuevas caracteristicas 
+feature --> desarrollo de las nuevas caracteristicas
+release --> es la preparacion de las nuevas caracteristicas
+hotfix --> donde se realiza el arreglo de bugs para evitar tocar el sistema en cambio constante
+
 
