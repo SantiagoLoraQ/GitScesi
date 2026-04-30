@@ -145,7 +145,7 @@ se debe crear un archivo llamado config donde se deben configurar las dos keys s
  restaurar
  experimentar
  cambiar
-## Clase 4
+## Clase 5
 ### Ramas o branches
 Las ramas son una caracteristica que permite al usuario subdividir su repositorio para tener un control acorde a las necesidades del usuario
 #### git branch
@@ -168,5 +168,21 @@ develop --> donde se prueban y preparan las nuevas caracteristicas
 feature --> desarrollo de las nuevas caracteristicas
 release --> es la preparacion de las nuevas caracteristicas
 hotfix --> donde se realiza el arreglo de bugs para evitar tocar el sistema en cambio constante
+
+## Clase 6
+git log --graph --oneline --all --> para ver las ramas con sus respectivos commits
+
+### merge 
+#### ¿Que es?
+Es el comando que permite fusionar las ramas y unir el trabajo que se haya realizado
+
+#### Git fetch
+comando para ver si si hubo cambios en la rama y sus herramientas
+
+#### Git pull 
+Trae los cambios del repositorio remoto al local
+- git pull origin rama 
+#### Git push 
+Comando que sirve para subir los cambios hechos en local al repositorio remoto
 
 
