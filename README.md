@@ -185,4 +185,18 @@ Trae los cambios del repositorio remoto al local
 #### Git push 
 Comando que sirve para subir los cambios hechos en local al repositorio remoto
 
+### Clase 7
+El pull request es una propuesta para integrar cambios de una rama de codigo a otra en sistemas de control de versiones
+#### El flujo del pull request:
+Creas una rama secundaria para trabajar en una funcionalidad o correccion especifica sin afectar el codigo principal 
+
+Una vez terminado se abre un pull request
+
+Otros desarrolladores verifican el codigo, lo revisan, comentan, sugieren mejoras o aceptan el cambio
+
+Si hay observaciones se hacen las mejoras y se actualiza el pr automaticamente
+
+Una vez aprobado se realiza un merge y se vuelve parte de la rama principal
+
+
 
