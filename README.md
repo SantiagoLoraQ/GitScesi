@@ -186,7 +186,11 @@ Trae los cambios del repositorio remoto al local
 Comando que sirve para subir los cambios hechos en local al repositorio remoto
 
 ### Clase 7
-El pull request es una propuesta para integrar cambios de una rama de codigo a otra en sistemas de control de versiones
+El pull request es una propuesta para integrar cambios de una rama de codigo a otra en sistemas de control de versiones, esta es una funcion para impedir que cualquier persona fusione ramas deliveradamente, permite dar feedback y es una forma profesional de trabajar
+
+#### Configurar el pull request
+Para configurar un pull request lo primero a hacer es dirigirse a los ajustes del repositorio, una vez ahi dentro se debra dirigir a la seccion rulesets, se asigna un nombre, se lo colaca en activado, activamos la rule "Require a pull request before merging" y finalmente seleccionar a que ramas queremos que se aplique esta esta regla o las que seleccionemos.
+
 #### El flujo del pull request:
 Creas una rama secundaria para trabajar en una funcionalidad o correccion especifica sin afectar el codigo principal 
 
@@ -198,5 +202,17 @@ Si hay observaciones se hacen las mejoras y se actualiza el pr automaticamente
 
 Una vez aprobado se realiza un merge y se vuelve parte de la rama principal
 
+#### ¿Para que sirven los Pull Request?
+Los pull request sirven especialmente para tener un control de seguridad al momento de confirmar cambios, esto es util dado que se puede verificar cambios que puedan afectar el codigo de forma negativa, ya se por intentos de introducir codigo mal intencionado, codigo que esta fuera de lo previsto o estar al tanto de los cambios que se van realizando
 
+
+
+### Clase 8
+En la ultima clase se ralizaron distintas pruebas, el como al borrar una rama de forma remota no se actualiza de forma automatica del repositorio local,
+
+git stash -m "descripcion --> permite guardar de forma temporal cambios realizados de forma local para poder traer datos del repositorio remoto sin perder los cambios y poder recuperarlos mas tarder sin requerir de hacer commit
+
+git fetch --> permite descargar el repositorio remoto sin la necesidad de reemplazar los cambios que se tienen en local ni tener que resolver problemas, esto sirve para poder ver que cambios se han realizado previo a cualquier nuevo cambio que pueda perjudicar a futuro acorde a las necesidades que se tengan
+
+git diff --> muestra que esta distinto entre ramas, commits y distintas variaciones
 
